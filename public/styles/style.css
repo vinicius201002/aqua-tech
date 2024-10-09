@@ -13,9 +13,9 @@ body {
 
 :root {
     --tamanho-header: 80px;
-    --tamanho-banner: calc(100vh -  var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-banner: calc(65vh -  var(--tamanho-header) - var(--tamanho-footer) - 2px);
     --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-    --tamanho-footer: 65px;
+    --tamanho-footer: 130px;
 }
 
 .header {
@@ -37,7 +37,7 @@ body {
 
 .header a {
     text-decoration: none;
-    color: #e3b062;
+    color: white;
 }
 
 .agora {
@@ -56,7 +56,7 @@ body {
 .titulo {
     color: #32B9CD;
     width: fit-content;
-    font-weight: 800;
+    font-size: 2rem;
 }
 
 .banner {
@@ -73,7 +73,7 @@ body {
 }
 
 .banner .container p {
-    width: 50%;
+    width: 62%;
     margin: 0;
     padding: 0;
     font-size: 36px;
@@ -90,17 +90,31 @@ body {
     align-items: center;
 }
 
+.social .container {
+ 
+}
+
 .social .container .boxes {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    width: 100%;
-    padding: 30px 0;
+    width: 87%;
+    padding: 30px 152px 0 152px;
 
+}
+
+.box-text p {
+    text-align: center;
+}
+
+.box-assets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .box {
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
@@ -122,6 +136,7 @@ body {
 }
 
 .version {
+    align-self: start;
     font-size: 12px;
 }
 
